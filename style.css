@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+:root{
+    --site-background: #F2F2F7;
+}
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    transition: all 1000ms;
+}
+body{
+    margin: 0;
+    padding: 20px 20px 0px;
+    background-color: var(--site-background);
+}
+.top_bar{
+    width: 280px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+}
+.menu_background{
+    width: 260px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.menu{
+    width: 260px;
+    height: 30px;
+
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.menu_items{
+    padding: 7px 16px;
+    opacity: 60%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #8CDFA2;
+    box-shadow: -1.66667px 1.66667px 3.33333px rgba(0, 0, 0, 0.25), inset 0.833333px -0.833333px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 33.3333px;
+
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+#selector{
+    position: absolute;
+    width: 70px;
+    height: 22.5px;
+    left: 35.5px;
+    top: 3.75px;
+
+    background: linear-gradient(262.73deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #F37070;
+    box-shadow: -1.25px 1.25px 2.5px rgba(0, 0, 0, 0.25), inset 0.625px -0.625px 2.5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+.selected{
+    color: white;
+    opacity: 100;
+    color: #FFFFFF;
+    text-shadow: -0.625px 0.625px 1.25px rgba(0, 0, 0, 0.25);
+}
